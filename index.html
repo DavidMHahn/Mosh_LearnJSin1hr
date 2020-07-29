@@ -1,0 +1,62 @@
+<!--First Lesson, creating an html file. Note that this is how you create a comment in HTML--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+
+<!--Adding Hello World to the body inside of h1 tags-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+</body>
+</html>
+
+<!--Adding script tags to the body after the h1 tags and any other tags-->
+<!--Note, that when copy/pasting this code into the console, it gives an error (Uncaught SyntaxError: Unexpected token '<'  I don't know why-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+    <script>
+        //This is my first JS code
+   console.log('Hello World');
+    </script>
+</body>
+</html>
+
+<!--Separation of Concerns
+It is better to put the JS code in a separate file and reference that file in our html file within the opening <script> tag-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+    <script src="Mosh_LearnJSin1hr.js"> //your code would show <script src="index.js">
+        //This is my first JS code  commenting out this line
+        //console.log('Hello World');   commenting out this line
+    </script>
+</body>
+</html>
