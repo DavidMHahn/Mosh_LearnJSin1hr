@@ -58,5 +58,38 @@ console.log('Hello World');
 
 //From now on we will not be using node to run our .js files.
 
-//Variables to store data temporarily
+//Variables are used to store data
+//the old variable declaration was 'var'
+//In ES6 we use 'let' to declare a variable
+//Once a variable is declared with 'let', it can be used without using the 'let' designation again (see example in Constants section below).
+let name;
+console.log(name); //Prints 'undefined' to the console since name has no value
 
+let name = 'Mosh';
+console.log(name); //Prints 'Mosh' to the console.
+
+//Variable names cannot be a reserved keyword (if, else, let, etc.)
+//Variable names should be meaningful so you know what the purpose of the variable is.
+//Variables cannot start with a number.
+//Variables cannot contain a space or a hyphen (-).
+//Variables by convention should be in camelCase. (e.g. thisIsCamelCase)
+//Variables are case sensitive. VARIABLE is not equal to variable or Variable.
+//If you want to declare multiple variables you can do it on one line separated by comma. 
+//Best practice is to declare each variable on a separate line
+//(e.g. let firstName = 'Mosh');
+//      let lastName = 'Hamedani');
+
+//Constants (const). Note: The const declaration creates a read-only reference to a value. It doesn't mean the value it holds is immutable, just that the variable identifier cannot be reassigned. A constant cannot share its name with a function or a variable in the same scope.
+let interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);//Prints 1. The initial value for interestRate 0.3 has been rewritten by the second value of 1.
+
+//Trying to reassign a constant (const) variable.
+const interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate); //Prints Uncaught TypeError: Assignment to constant variable at <filename>:<line#>.
+
+//Note : a common naming convention for constant (const) variables is to use ALL_CAPS
+//(e.g. const INTEREST_RATE = 'value').
+
+//Primitive Types
